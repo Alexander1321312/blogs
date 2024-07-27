@@ -1,0 +1,30 @@
+<!-- <link rel="stylesheet" href="/styles/content.css"> -->
+<body>
+    
+    <%- include('partials/header.ejs') %>
+
+
+
+
+    <main>
+        <h1 class="home-title">Your Blog App</h1>
+        <span class="post-button">
+        <a href="/post">View and Edit Posts</a>
+        </span>
+        <% if (postData.length > 0) { %>
+            <span class="new-post">
+                <h3 class="addpost-title">Add New  post👇</h3>
+                 <a href="/blog" class="add-post">+</a>
+               </span>
+
+            <% }else{ %>
+            <span class="new-post">
+             <h3 class="addpost-title">Add your first post👇</h3>
+              <a href="/blog" class="add-post">+</a>
+            </span>
+        <% } %>
+    </main>
+    
+    <%- include('partials/footer.ejs') %>
+</body>
+
