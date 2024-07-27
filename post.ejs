@@ -1,0 +1,36 @@
+<link rel="stylesheet" href="/styles/content.css">
+
+<%- include('partials/header.ejs') %>
+<div class="container">
+
+    <span class="newpost"> 
+        <a href="/blog">Add new post</a>
+    </span>
+</div>
+<div class="recent-posts">
+    <h1>Recent Posts:</h1>
+    <% if (locals.postData) { %>
+     <% postData.forEach((post) => { %>
+        
+         <ul id="post-list">
+         <li>
+            <span class="post-title">
+                <h2><a href="postData/<%= post.title %>"><%= post.title %></a></h2>
+            </span>
+             <small>
+               <%= post.postDate%>
+             </small>
+             <p>
+               <%= post.content.substring(0,100) + "..."  %> <a href="postData/<%= post.title %>">Read More</a>
+             </p>
+             <small>
+              <%= post.name %>
+             </small>
+            
+         </li>
+         </ul>
+         <hr>
+         <% }); %>
+    <% } %>
+</div>
+<%- include('partials/footer.ejs') %>

@@ -1,0 +1,14 @@
+<%- include('partials/header.ejs') %>
+<div class="view-post">
+    <h1 class="post-heading"> <%= title %> </h1>
+    <p> <%= date %></p>
+    <p> <%= name %></p>
+    <p> <%= content %></p>
+</div>
+    <div class="buttons">
+        <a href="/edit/<%= title %>" class="edit btn ">Edit</a>
+        <a href="/delete/<%= title %>" class="delete btn ">Delete</a>
+    </div>
+
+
+<%- include('partials/footer.ejs') %>

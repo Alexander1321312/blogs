@@ -1,0 +1,95 @@
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Barlow", sans-serif;
+}
+
+:root{
+    --color1:#0D1F22;
+    --color2:#2E5157;
+    --color3:#2F8999;
+}
+
+.post-heading{
+    text-align: center;
+    margin: 20px 0px;
+}
+
+.home-title{
+  text-align: center;
+  margin: 20px 0px;
+}
+
+.post-button a{
+    text-decoration: none;
+
+   color: white;
+
+}
+
+.post-button a:hover{
+   color:var(--color3);
+   text-decoration: underline;
+
+}
+
+.post-button {
+   display: flex;
+   justify-content: center;
+   align-items: center;
+  margin: 40px auto;
+  cursor: pointer;
+  font-size: 18px;
+  font-weight: 600;
+width: 32%;
+  background-color: var(--color1);
+  padding: 15px;
+}
+
+.new-post{
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   flex-direction: column;
+   gap: 12px;
+}
+.add-post{
+   text-decoration: none;
+   font-size: 4rem;
+   color: black;
+   border: 2px dotted black;
+   padding: 45px 142px;
+}
+#post-list a{
+ color: white;
+ text-decoration: none;
+ cursor: pointer;  
+}
+#post-list a:hover{
+
+   text-decoration: underline;
+ 
+  }
+
+
+  hr{
+   margin: 20px 0px;
+  }
+  
+  .view-post{
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   flex-direction: column;
+   padding: 0px;
+   margin: 0;
+  }
+
+  .buttons{
+   display: flex;
+   justify-content: center;
+   align-items: center;
+  }

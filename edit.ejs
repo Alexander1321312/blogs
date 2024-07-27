@@ -1,0 +1,10 @@
+<%- include('partials/header.ejs') %>
+<h1 class="blog-heading">Edit your Post</h1>
+<form action="/edit/<%= title %>" method="post" class="post-form">
+    <input type="text" name="title" class="post-title" value="<%= title %>">
+    <input type="text" name="name" class="author-name" value="<%= name %>">
+    <textarea name="content" id="post-content" ><%= content %></textarea>
+    <input type="submit" value="Save" class="publish-post">
+</form>
+
+<%- include('partials/footer.ejs') %>
